@@ -30,7 +30,7 @@ for nome_arquivo in os.listdir(pasta_imagens):
 
         largura, altura = imagem.size
 
-        caixa_corte = (215, 387, largura - 63, altura - 191) # ATUALIZE AQUI OS VALORES DE CORTE (esquerda, superior, direita, inferior)
+        caixa_corte = (260, 387, largura - 216, altura - 191) # ATUALIZE AQUI OS VALORES DE CORTE (esquerda, superior, direita, inferior)
         imagem_cortada = imagem.crop(caixa_corte)
 
         caminho_saida = os.path.join(pasta_saida, nome_arquivo)
